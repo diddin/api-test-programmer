@@ -45,7 +45,7 @@ class Produk_model extends CI_Model
 	}
 
 	function delete($id)
-	{ echo "decode result <pre>"; print_r( $id ); echo "</pre>"; die();
+	{
 		$this->db->where('id_produk', $id);
 		$this->db->delete('Produk');
 	}
